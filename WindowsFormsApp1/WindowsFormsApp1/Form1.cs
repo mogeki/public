@@ -42,16 +42,14 @@ namespace WindowsFormsApp1
             DataTable dt2 = new DataTable();
             dt2.Columns.Add("品目コード", typeof(string));
             dt2.Columns.Add("プラント", typeof(string));
-            dt2.Columns.Add("有効開始日", typeof(DateTime));
-            dt2.Columns.Add("有効終了日", typeof(DateTime));
+            dt2.Columns.Add("所要日", typeof(DateTime));
             dt2.Columns.Add("標準仕入先コード", typeof(string));
             for (int rowIndex = 1; rowIndex <= 10000; rowIndex++)
             {
                 DataRow dr = dt2.NewRow();
                 dr["品目コード"] = rowIndex;
                 dr["プラント"] = "PW20";
-                dr["有効開始日"] = new DateTime(2022, 11, 1);
-                dr["有効終了日"] = new DateTime(9999, 12, 1);
+                dr["所要日"] = new DateTime(2022, 11, 1);
                 dr["標準仕入先コード"] = rowIndex;
                 dt2.Rows.Add(dr);
             }
