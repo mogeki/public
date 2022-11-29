@@ -79,6 +79,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MST2.cs" />
+    <Compile Include="MST1.cs" />
     <Compile Include="DbConect.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

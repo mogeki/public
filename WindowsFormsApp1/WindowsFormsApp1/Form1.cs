@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClosedXML.Excel;
 using System.IO;
+using System.Diagnostics;
 
 namespace WindowsFormsApp1
 {
@@ -19,6 +20,9 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        /// <summary>
+        /// ClosedXMLテスト
+        /// </summary>
         private void button1_Click(object sender, EventArgs e)
         {
             string filePath = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "TEST.xlsm");
@@ -179,6 +183,50 @@ namespace WindowsFormsApp1
             workbook.SaveAs(Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "TEST_NEW.xlsm"));
 
             MessageBox.Show("完了");
+        }
+
+        /// <summary>
+        /// レスポンステスト
+        /// </summary>
+        private void button2_Click(object sender, EventArgs e)
+        {
+            List<MST1> mstList1 = new List<MST1>();
+            for(int i=0;i < 250; i++)
+            {
+                MST1 newMst1 = new MST1();
+                newMst1.CODE = Convert.ToString(i);
+                newMst1.NAME = "名称" + Convert.ToString(i);
+                newMst1.KIKAN_FROM = DateTime.Now.AddDays(i);
+                newMst1.KIKAN_TO = DateTime.Now.AddDays(i).AddMonths(2);
+                mstList1.Add(newMst1);
+            }
+
+            List<MST2> mstList2 = new List<MST2>();
+            for (int i = 0; i < 3000; i++)
+            {
+                MST2 newMst2 = new MST2();
+                newMst2.CODE = Convert.ToString(i);
+                newMst2.NAME = "名称" + Convert.ToString(i);
+                newMst2.KIKAN_FROM = DateTime.Now.AddDays(i);
+                newMst2.KIKAN_TO = DateTime.Now.AddDays(i).AddMonths(2);
+                mstList2.Add(newMst2);
+            }
+
+            string a = "";
+
+            for (int datIndex = 0; datIndex < 10000; datIndex++)
+            {
+                DateTime checkDt = new DateTime(2022, 12, 31);
+                List<MST1> hitMst1 = mstList1.FindAll(x => { return x.KIKAN_FROM <= checkDt && x.KIKAN_TO >= checkDt; });
+                List<MST2> hitMst2 = mstList2.FindAll(x => { return x.KIKAN_FROM <= checkDt && x.KIKAN_TO >= checkDt; });
+                for(int mstIndex = 0;mstIndex < hitMst1.Count - 1; mstIndex++)
+                {
+                    Debug.Print(Convert.ToString(datIndex));
+                }
+                //Debug.Print(Convert.ToString(hitMst1.Count));
+            }
+
+            MessageBox.Show("END");
         }
     }
 }

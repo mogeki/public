@@ -19,3 +19,4 @@ D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\bin\Debug
 D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Data.Common.dll
 D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Data.SqlClient.dll
 D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\TEST.xlsm
+D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
