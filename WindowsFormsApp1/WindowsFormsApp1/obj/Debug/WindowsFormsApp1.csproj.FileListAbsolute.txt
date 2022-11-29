@@ -8,7 +8,6 @@ D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\bin\Debug
 D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.xml
 D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.xml
 D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.xml
-D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
 D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 D:\SOURCE\複写購買EXCELテスト\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
